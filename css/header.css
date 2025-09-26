@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/*전체서식*/
+*{margin: 0px; padding: 0px;}
+body{
+  font-family:Nanum Gothic,JetBrains Mono,Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #333;
+}
+a{
+  color: #333;
+  text-decoration: none;
+}
+/*헤더영역서식*/
+header{
+  position: absolute;
+  width: 100%; height: 210px;
+  z-index: 100;
+  background:transparent;
+}
+/*메인로고 서식*/
+header > .h_top{
+  width: 1440px; height: 116px;
+  margin: 0 auto;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+header > .h_top h1{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 153px; height: 66px;
+  margin: 0;padding:0;
+}
+header > .h_top h1 img{
+  max-width: 100%; height: auto;
+  display: block;
+  transform-origin: center center
+}
+/*언어선택, 배송아이콘 서식*/
+header > .h_top .gnb_etc{
+  position: absolute;
+  right: 80px; top: 70px;
+}
+#lang{
+  transform: translateX(-20px);
+  width: 80px; height: 24px;
+  text-align: center;
+  border: none;
+  background: none;
+}
+.gnb_etc > label img{
+  width: 28px;height: 28px;
+}
+/*상단 네비게이션 서식*/
+.gnb_cover{
+  width: 100%; height: 70px;
+  background-color:rgba(255,255,255,0.4)
+}
+#gnb{
+  width: 720px; height: 70px;
+  line-height: 70px;
+  margin: 0 auto;
+  transform: translateX(-20px);
+  overflow: hidden;/*t서브메뉴 숨기기*/
+  transition: 0.5s;
+}
+#gnb:hover{
+  height: 560px;
+  background-color:rgba(255, 255, 255, 0.9);
+  width: 100%;
+  
+}
+#gnb > ul{display: flex;}
+/*네이게이션 서브메뉴 서식*/
+#gnb > ul > li{
+  margin: 0 auto;
+  text-align: center;
+}
+#gnb ul li ul.sub li:hover > a {
+  color: #264CE5;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+
+/*
+메모
+1. 언어선택font 수정
+2. .gnb_etc text높이 수정
+*/

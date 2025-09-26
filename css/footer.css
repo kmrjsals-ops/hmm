@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+footer{
+  background-color: #000000e8;
+  height: 300px;
+  color: #fff;
+}
+/*하단 gnb 서식*/
+#gnb2{
+
+  background-color: #666;
+  color: #000;
+}
+.sub2{
+  display: flex;
+  width: 720px; height: 90px;
+  line-height: 70px;
+  margin: 0 auto;
+  transform: translateY(5px);
+}
+.sub2 > li{
+  margin: 0 auto;
+  text-align: center;
+}
+.sub2 > li > a{
+  color: #fff;
+}
+/*하단 정보 서식*/
+.footer{
+  position: relative;
+}
+.footer img{
+  position: absolute;
+  width: 233px; height: 100px;
+  left: 160px;top: 70px;
+}
+.footer a{
+  color: #fff;
+}
+.txt03{
+  position: absolute;
+  display: inline-block;
+  left: 440px;top: 70px;
+  word-spacing: 0.5em;
+  width: 520px;
+}
+.txt03 a{
+    text-align: justify;
+}
+address{
+  position: absolute;
+  line-height: 30px;
+  left: 440px;top: 120px;
+}
+.icon{
+  position: absolute;
+  right: 50px;
+  transform: translateY(50px);
+}
+.icon a{
+  display: block;
+  width: 36px; height: 36px;
+  right: 50px;
+}

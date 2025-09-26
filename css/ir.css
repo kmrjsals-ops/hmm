@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+.ir_cover{
+  height: 1100px;width: 100%;
+  position: relative;
+}
+.ir_cover::before{
+  background-image: url(../images/thumb7.jpg);
+  background-repeat:no-repeat;
+  background-size: 100%;
+  content: "";
+  opacity: 0.3;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+#ir{
+  padding-top: 20px;
+}
+/*ir con 공통서식*/
+.ir{
+  width: 1000px; height: 210px;
+  border: 3px rgb(221, 253, 253);
+  border-radius: 15px;
+  text-align: center;
+  background-color:#fff;
+}
+.ir h3{
+  font-size: 21px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+/*con_n 개별서식*/
+.ir_con1{
+  position: absolute;
+  top: 20%;left: 23%;
+}
+.ir_con1 img{
+  transform: translateY(55px);
+}
+.ir_con2{
+  position: absolute;
+  top: 45%;left: 23%;
+}
+.ir_con3{
+  position: absolute;
+  top: 70%;left: 23%;
+}
+.ir_con3 p{
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 50px;
+  text-decoration: underline;
+}
+/*auto typing 서식*/
+.typing {
+  height: 55px;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  font-size: 2rem;
+  position: absolute;
+  left: 40%;
+}
+
+.text {
+  font-size: 2.2rem;
+  margin-left: .6rem;
+  font-weight: bold;
+}
+
+.text::after {
+  content: '';
+  margin-left: .4rem;
+  border-right: 2px solid #777;
+  animation: cursor .9s infinite steps(2);
+}
+
+@keyframes cursor {
+  from { border-right: 2px solid #222; }
+  to { border-right: 2px solid #777; }
+}
+
+/* ---------------------------------------- */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
